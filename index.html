@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="Header">
+            <h1>CRUDS</h1>
+            <h2>CREATE READ UPDATE DELETE SEARCH</h2>
+          </div>
+          <div class="inputs">
+            <form action="">
+              <input type="text" name="" id="title" placeholder="Title" />
+              <div class="total">
+                <input type="number" name="" id="price" placeholder="Price" />
+                <input type="number" name="" id="taxes" placeholder="Taxes" />
+                <input type="number" name="" id="ads" placeholder="Ads" />
+                <input
+                  type="number"
+                  name=""
+                  id="discount"
+                  placeholder="Discount"
+                />
+                <p id="total">TOTAL:</p>
+              </div>
+              <div class="create">
+                <input type="number" name="" id="count" placeholder="Count" />
+                <input
+                  type="text"
+                  name=""
+                  id="category"
+                  placeholder="Category"
+                />
+                <input type="submit" value="Create" id="submit" />
+              </div>
+            </form>
+          </div>
+          <div class="search">
+            <input
+              onkeyup="SearchOnData(this.value)"
+              type="search"
+              name=""
+              id="searchinput"
+              placeholder="Search"
+            />
+            <div class="searchBy">
+              <input
+                onclick="SearchBy(this.id)"
+                type="submit"
+                value="Search by Title"
+                id="search-title"
+              />
+              <input
+                onclick="SearchBy(this.id)"
+                type="submit"
+                value="Search by Category"
+                id="search-category"
+              />
+            </div>
+          </div>
+
+          <div class="Data">
+            <table>
+              <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>Taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>Count</th>
+                <th>category</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

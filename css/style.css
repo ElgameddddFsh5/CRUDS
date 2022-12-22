@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f3f3f3;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: 100px;
+}
+main section .container {
+}
+main section .container .Header {
+}
+main section .container .Header h1 {
+  font-size: 40px;
+}
+main section .container .Header h2 {
+  padding: 20px 0px;
+}
+main section .container .inputs {
+}
+main section .container .inputs form {
+}
+main section .container .inputs .create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .container .inputs form input,
+main section .container .search input {
+  height: 80px;
+  width: 400px;
+  font-size: 25px;
+  border: none;
+  background-color: #dadada;
+  margin: 20px 0px;
+  padding: 0px 10px;
+}
+main section .container .inputs form input,
+main section .container .search input:focus {
+  outline: none;
+}
+main section .container .inputs form #submit,
+main section .container .search #search-category,
+main section .container .search #search-title {
+  height: 80px;
+  width: 400px;
+  background-color: #ffaaff;
+  cursor: pointer;
+}
+main section .container .inputs form #submit:hover,
+main section .container .search #search-category:hover,
+main section .container .search #search-title:hover {
+  background-color: rgb(41, 162, 184);
+}
+main section .container .inputs form .total #total {
+  font-size: 25px;
+}
+main section .container .search #searchinput,
+#count,
+#category {
+  width: 100%;
+  
+}
+main section .container .search .searchBy {
+  display: flex;
+  justify-content: space-between;
+  
+}
+main section .container .Data {
+  /* display: flex;
+  justify-content: center; */
+  background-color: #fff;
+  padding: 20px 0px;
+}
+main section .container .Data table #update,
+main section .container .Data table #delete {
+  background-color: #ffaaff;
+  cursor: pointer;
+}
+
+main section .container .Data table {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+main section .container .Data table th {
+  text-transform: uppercase;
+}
+main section .container .Data table th,
+td {
+  padding: 10px 0px;
+}
+main section .container .Data #Delete-all {
+  border: none;
+  height: 70px;
+  width: 400px;
+  background-color: #ffaaff;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+main section .container .Data #Delete-all:hover {
+  background-color: red;
+  color: #fff;
+}
