@@ -126,6 +126,14 @@ function DeleteAllBtn() {
   DeleteAllBtnn.addEventListener("click", () => {
     localStorage.removeItem("Data");
     Projects.splice(0);
+    SubmitBtn.value = "Create";
+    title.value = "";
+    price.value = "";
+    taxes.value = "";
+    ads.value = "";
+    discount.value = "";
+    count.value = "";
+    category.value = "";
     ShowData();
     DeleteAllBtnn.style = "display:none;";
     total.innerHTML = "TOTAL:";
